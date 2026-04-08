@@ -1,0 +1,34 @@
+# Python
+
+**pycache**/
+*.pyc
+
+# Ambiente virtual
+
+venv/
+.env
+
+# Banco de dados
+
+db.sqlite3
+
+# Arquivos desnecessários
+
+.DS_Store
+*.log
+notes.md
+
+# IDE
+
+.vscode/
+.idea/
+
+# Arquivos pesados / backups
+
+*.zip
+*.tar
+*.gz
+
+# Arquivos estáticos gerados (deploy)
+
+staticfiles/

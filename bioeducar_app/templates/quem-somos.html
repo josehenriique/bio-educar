@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'general/css/quem-somos.css' %}">
+{% endblock %}
+
+{% block 'content' %}
+<section id="section-1">
+  
+  <div class="container">
+     
+    <div class="content-text">
+      <h1 class="display">Uma <span>semente</span> de educação plantada para <span>florescer</span> em conservação.</h1>
+    </div>
+  
+  </div>
+  
+  <img class="onca-pintada animal-header" src="{% static 'assets/onca_pintada.png' %}"alt="">
+  <!-- Autor: Flickr -->
+  <!-- https://creativecommons.org/licenses/by/2.0/ -->
+  <img class="bg-home" src="{% static 'assets/Home_1.png' %}" alt="">
+</section>
+
+<section id="section-2" class="container">
+  <div class="content-text">
+    <div class="title">
+      <h3 class="subtitle">QUEM SOMOS</h3>
+      <h1 class="display">Instituto <br> <span class="logo-bio">Bio</span><span class="logo-educar">Educar</span></h1>
+    </div>
+    
+    <p class="text">
+      {{quem_somos_page.texto|safe}} 
+    </p>
+  </div>
+
+  <hr class="line">
+</section>
+
+
+<section id="section-3" class="container">
+  <div class="content-text">
+    <p class="subtitle">NOSSOS</p>
+    <h1 class="display">Propósito e Valores</h1>
+  </div>
+  
+  <div class="container-card">
+
+    <div class="row-card">
+      <div class="card" data-lag="0.2">
+        <h3 class="display">01</h3>
+        <h1 class="heading-2">{{card_proposta_1.titulo|safe}}</h1>
+        <h1 class="text">{{card_proposta_1.texto|safe}}</h1>
+      </div>
+  
+      <div class="card" data-lag="0.1">
+        <h3 class="display">02</h3>
+        <h1 class="heading-2">{{card_proposta_2.titulo|safe}}</h1>
+        <h1 class="text">{{card_proposta_2.texto|safe}}</h1>
+      </div>
+    </div>
+
+    <div class="row-card">      
+      <div class="card" data-lag="0.2">
+        <h3 class="display">03</h3>
+        <h1 class="heading-2">{{card_proposta_3.titulo|safe}}</h1>
+        <h1 class="text">{{card_proposta_3.texto|safe}}</h1>
+      </div>
+  
+      <div class="card" data-lag="0.1">
+        <h3 class="display">04</h3>
+        <h1 class="heading-2">{{card_proposta_4.titulo|safe}}</h1>
+        <h1 class="text">{{card_proposta_4.texto|safe}}</h1>
+      </div>
+    </div>
+    
+  </div>
+
+  <button class="btn-gradient">CONHEÇA NOSSOS PROJETOS</button>
+</section>
+
+<img class="folha" id="folha-1" src="{% static 'assets/folha_1.png' %}" data-lag="0.2" alt="">
+<img class="folha" id="folha-2" src="{% static 'assets/folha_2.png' %}" data-lag="0.2" alt="">
+{% endblock %}
+
+{% block 'script' %}
+<script src="{% static 'general/js/quem_somos.js' %}" ></script>
+{% endblock %}

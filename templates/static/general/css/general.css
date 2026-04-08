@@ -1,0 +1,229 @@
+:root{
+  /* Collors */
+  --green-dark: #4F5C3E;
+  --green-light: #AFBF81;
+  --white: #FBFBFB;
+  --yellow: #FDD75A; 
+
+  font-size: 62.5%; 
+  /* Transforma o font-size de 16px para 10px, facilitando o uso do rem */
+
+  /* Font Size */
+  --fs-display: 4.32rem; /* 5.4rem - 20% */
+  --fs-subtitle: 1.12rem; /* 1.4rem - 20% */
+  --fs-text: 1.44rem; /* 1.8rem - 20% */
+  --fs-h1: 1.6rem; /* 2rem - 20% */
+  --fs-h2: 1.6rem; /* 2rem - 20% */
+  --fs-text-menu: 1.12rem; /* 1.4rem - 20% */
+  --fs-text-button: 1.6rem; /* 2rem - 20% */
+  --fs-topic-button: 1.6rem; /* 2rem - 20% */
+
+  /* Font Weight */
+  --fw-display: 700; /* Unchanged */
+  --fw-subtitle: 600; /* Unchanged */
+  --fw-text: 500; /* Unchanged */
+  --fw-h1: 700; /* Unchanged */
+  --fw-h2: 600; /* Unchanged */
+  --fw-text-menu: 600; /* Unchanged */
+  --fw-text-button: 600; /* Unchanged */
+  --fw-topic-button: 500; /* Unchanged */
+
+  /* Line Height */
+  --lh-display: 4.8rem; /* 6rem - 20% */
+  --lh-subtitle: 1rem; /* 3.2rem - 20% */
+  --lh-text: 1.92rem; /* 2.4rem - 20% */
+  --lh-h1: 3rem; /* 4.8rem - 20% */
+  --lh-h2: 2.56rem; /* 3.2rem - 20% */
+  --lh-text-menu: 1.92rem; /* 2.4rem - 20% */
+  --lh-text-button: 3rem; /* 4.8rem - 20% */
+  --lh-topic-button: 1.92rem; /* 2.4rem - 20% */
+
+  /* Letter Spacing */
+  --ls-display: 0.08rem; /* 0.1rem - 20% */
+  --ls-subtitle: 0.48rem; /* 0.6rem - 20% */
+  --ls-text: 0; /* Unchanged */
+  --ls-h1: 0; /* Unchanged */
+  --ls-h2: 0; /* Unchanged */
+  --ls-text-menu: 0.08rem; /* 0.1rem - 20% */
+  --ls-text-button: 0.48rem; /* 0.6rem - 20% */
+  --ls-topic-button: 0; /* Unchanged */
+
+  /* Padding General */
+
+  --padding-screen: clamp(15%, 29rem, 10%); 
+}
+
+.container{
+  width: 100%;
+  padding: 0 var(--padding-screen);
+}
+
+.btn-gradient{
+  position: relative;
+  padding: 1rem 7rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-size: var(--fs-text-button);
+  font-weight: var(--fw-text-button);
+  line-height: var(--lh-text-button);
+  letter-spacing: var(--ls-text-button);
+
+  background: linear-gradient(93deg, var(--green-light) -16.39%, var(--yellow) 131.38%, var(--green-light) -16.39%, var(--yellow) 131.38%);
+  background-size: 400% 100%;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  animation: btn-gradient-reverse 0.5s ease forwards;
+
+  transition: transform .5s;
+}
+
+.btn-gradient:hover{
+  animation: btn-gradient 1s alternate infinite;
+  transform: scale(1.1);
+}
+
+.line{
+  background-color: var(--green-dark);
+  height: 2px;
+  width: 100%;
+  padding: 0;
+}
+
+.logo-bio{
+  font-weight: 400;
+}
+
+.logo-educar{
+  font-weight: 700;
+}
+
+/* Texts */
+
+.destaque{
+  color: var(--green-light);
+}
+
+.display{
+  font-size: var(--fs-display);
+  font-weight: var(--fw-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+}
+
+.text_menu{
+  text-decoration: none;
+  font-size: var(--fs-text-menu);
+  font-weight: var(--fw-text-menu);
+  letter-spacing: var(--ls-text-menu);
+  color: var(--white);
+}
+
+.text{
+  font-size: var(--fs-text);
+  font-weight: var(--fw-text);
+  line-height: var(--lh-text);
+  letter-spacing: var(--ls-text);
+}
+
+.heading-1{
+  text-decoration: none;
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h1);
+}
+
+.heading-2{
+  text-decoration: none;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2);
+}
+
+.subtitle{
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-subtitle);
+  line-height: var(--lh-subtitle);
+  letter-spacing: var(--ls-subtitle);
+}
+
+/* KEYFRAMES */
+
+@keyframes btn-gradient {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}
+
+@keyframes btn-gradient-reverse {
+  0%{
+    background-position-x: 100%;
+  }
+  100%{
+    background-position-x: 0%;
+  }
+}
+
+
+/* Responsivo */
+
+/* Monitores grandes */
+@media (min-width: 1201px) {
+  
+}
+
+/* Desktops */
+@media (max-width: 1300px) {
+
+}
+
+/* Tablets em paisagem e desktops pequenos */
+@media (max-width: 1024px) {
+  
+}
+
+/* Tablets em retrato */
+@media (max-width: 768px) {
+  
+  #section-1 .content-text{
+    width: 100%;
+    margin: 8rem 0 4rem 0;
+  }
+
+  .container{
+    padding: 10%;
+  }
+
+  .btn-gradient{
+    padding: 1rem 4rem;
+  }
+
+}
+
+/* Smartphones */
+
+@media (max-width: 558px) {
+
+  :root{
+    font-size: 52.5% !important;
+  }
+
+  #section-2 .content-text{
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  #section-2 .content-text .text{
+    width: 80%;
+  }
+
+  .folha{
+    width: 35rem !important;
+  }
+}

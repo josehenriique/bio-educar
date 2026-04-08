@@ -1,0 +1,196 @@
+/* SECTION 1 */
+
+#section-1{
+  width: 100%;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#section-1 .content-text{
+  width: 55%;
+  margin: 8rem 0 4rem 0;
+}
+
+#section-1 .display{
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+#section-1 .display span{
+  color: var(--yellow);
+}
+
+#section-1 .text{
+  color: var(--white);
+}
+
+#section-1 .heading-1{
+  color: var(--yellow);
+}
+
+/* Beija-flor */
+
+.beija-flor{
+  width: 70rem;
+  position: absolute;
+  right: 10rem;
+  bottom: 0;
+}
+
+/* SECTION 2 */
+
+#section-2 .content-text{
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 4rem 0;
+
+  padding-top: 14rem;
+}
+
+#section-2 .subtitle{
+  color: var(--green-light);
+}
+
+#section-2 .content-text .text{
+  width: 45%;
+}
+
+/* SECTION 3 */
+
+#section-3{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12rem;
+
+  overflow: hidden;
+}
+
+#section-3 .heading-2{
+  color: var(--green-light);
+}
+
+.informacoes{
+  width: 30%;
+}
+
+.informacao{
+  margin-bottom: 2.4rem;
+}
+
+#section-3 li{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.btn-whats{
+  margin: 15.6rem 0 25rem 0;
+  align-self: center;
+}
+
+/* Capivara */
+
+.capivara{
+  width: 150rem;
+  position: absolute;
+  right: -70rem;
+  bottom: 0;
+
+  z-index: -1;
+}
+
+/* Folhas */
+
+#folha-1{
+  width: 40rem;
+  left: -23rem;
+  top: 55rem;
+}
+
+#folha-2{
+  width: 35rem;
+  top: 100rem;
+  right: -21rem;
+}
+
+#folha-3{
+  width: 16rem;
+  bottom: -6rem;
+  left: -8rem;
+}
+
+/* Responsivo */
+
+/* Monitores grandes */
+@media (min-width: 1201px) {
+
+}
+
+
+/* Desktops */
+@media (max-width: 1300px) {
+  .beija-flor{
+    right: -20%;
+  }
+
+  .capivara{
+    right: -100%;
+  }
+
+}
+
+/* Tablets em paisagem e desktops pequenos */
+@media (max-width: 1024px) {
+  .beija-flor{
+    right: -40%;
+  }
+
+  .capivara{
+    right: -130%;
+  }
+
+}
+
+/* Tablets em retrato */
+@media (max-width: 800px) {
+  .beija-flor{
+    display: none;
+  }
+
+  .capivara{
+    display: none;
+  }
+
+  .informacoes{
+    width: 100%;
+  }
+
+  #section-2 .content-text{
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  #section-2 .content-text .text{
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+
+}
+
+/* Smartphones */
+
+@media (max-width: 558px) {
+
+
+}

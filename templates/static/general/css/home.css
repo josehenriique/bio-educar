@@ -1,0 +1,462 @@
+/* SECTION 1 */
+
+#section-1{
+  width: 100%;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  overflow: hidden;
+
+  /* margin-bottom: 20rem; */
+}
+
+.bg-home{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texts */
+
+#section-1 .content-text{
+  width: 40%;
+  margin: 8rem 0 4rem 0;
+}
+
+#section-1 .display{
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+#section-1 .display span{
+  color: var(--yellow);
+}
+
+#section-1 .text{
+  color: var(--white);
+  text-align: left;
+}
+
+#section-1 .heading-1{
+  color: var(--yellow);
+}
+
+
+
+/* Benedito */
+
+.benedito{
+  width: 25rem;
+  position: absolute;
+  right: clamp(30rem, 22%, 40rem);
+  bottom: 0;
+}
+
+/* SECTION 2 */
+
+#section-2 .content-text{
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 4rem 0;
+
+  padding-top: 14rem;
+}
+
+#section-2 .subtitle{
+  color: var(--green-light);
+}
+
+#section-2 .content-text .text{
+  width: 45%;
+}
+
+/* SECTINO 3 */
+
+#section-3{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 15rem;
+}
+
+/* Gallery */
+.photo-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.wrapper-gallery{
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.photo{
+  height: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#section-3 .btn-gradient{
+  margin-top: 6rem;
+  z-index: 3;
+}
+
+/* SECTION 4 */
+
+#section-4{
+  position: relative;
+  padding: 7rem 0;
+}
+
+#section-4 .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#section-4 .content-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-4 .display, #section-4 span{
+  color: var(--yellow);
+  text-align: center;
+}
+
+#section-4 .subtitle{
+  color: var(--green-light);
+}
+
+#section-4 .content-text .text{
+  margin-top: 3rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#section-4 .destaque{
+  color: var(--yellow);
+}
+
+/* Cards */
+
+.card{
+  width: 25rem;
+  padding: 3rem 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+.container-cards{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30rem 18rem 30rem;
+  grid-template-areas: 
+  "card1 . card2"
+  ". card3 ."
+  "card4 . card5";
+
+  gap: 2rem;
+  padding: 0 10rem;
+  margin: 5rem 0 10rem 0;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#card-1{
+  grid-area: card1;
+  align-self: end;
+}
+
+#card-2{
+  grid-area: card2;
+  align-self: flex-start;
+}
+
+#card-3{
+  grid-area: card3;
+}
+
+#card-4{
+  grid-area: card4;
+  align-self: end;
+}
+
+#card-5{
+  grid-area: card5;
+  align-self: flex-start;
+}
+
+#card-3 .icon-card, #card-4 .icon-card, #card-5 .icon-card{
+  background-color: var(--yellow);
+}
+
+#card-2, #card-3, #card-4{
+  background: url('../../assets/sheet-bg.png') var(--white) 50%;
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.card-text .text{
+  margin-top: 2rem;
+}
+
+.icon-card{
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -4.5rem 0 2rem 0;
+
+  border-radius: 1rem;
+  background-color: var(--green-light);
+}
+
+/* SECTION 5 */
+
+#section-5{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24rem 0 17rem 0;
+  width: 100%;
+  height: 100rem;
+}
+
+#section-5 .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-doacao{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;  
+  padding: 6rem 8rem;
+
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+  z-index: 2;
+}
+
+.card-doacao .content-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-doacao h1, .card-doacao p{
+  text-align: center;
+}
+
+.card-doacao .text{
+  width: 80%;
+}
+
+.card-doacao .subtitle{
+  color: var(--green-light);
+}
+
+.udu-coroa{
+  position: absolute;
+  z-index: 1;
+  top: -30rem;
+  right: -10rem;
+}
+
+/* OBJECTS */
+
+#folha-1{
+  width: 40rem;
+  left: -23rem;
+  top: 55rem;
+}
+
+#folha-2{
+  width: 35rem;
+  top: 100rem;
+  right: -21rem;
+}
+
+#folha-3{
+  width: 35rem;
+  top: 160rem;
+  left: -15rem;
+
+  transform: scale(-1, -1);
+}
+
+#folha-4{
+  width: 20rem;
+  bottom: -8rem;
+  left: -10rem;
+}
+
+#folha-5{
+  width: 20rem;
+  bottom: 90rem;
+  right: 6rem;
+
+  transform: scaleY(-1);
+}
+
+#folha-6{
+  width: 40rem;
+  top: 360rem;
+  right: -21rem;
+}
+
+#folha-7{
+  width: 40rem;
+  top: 450rem;
+  left: -23rem;
+}
+
+/* Responsivo */
+
+/* Monitores grandes */
+@media (min-width: 1201px) {
+  
+}
+
+
+/* Desktops */
+@media (max-width: 1300px) {
+  .benedito{
+    right: 10%;
+  }
+}
+
+/* Tablets em paisagem e desktops pequenos */
+@media (max-width: 1024px) {
+  
+}
+
+/* Tablets em retrato */
+@media (max-width: 768px) {
+
+  .benedito{
+    right: -10%;
+  }
+
+  .container-cards{
+    grid-template-areas: 
+    "card1 . card2"
+    "card3 . card4"
+    ". card5 . ";
+    grid-template-columns: 1fr 2rem 1fr;
+    grid-template-rows: repeat(3, 30rem);
+  }
+
+  #card-1, #card-2, #card-3, #card-4, #card-5{
+    justify-self: center;
+    align-self: center;
+  }
+
+  .card-doacao{
+    width: 90%;
+    padding: 4rem 4rem;
+  }
+
+  .btn-gradient{
+    padding: 1rem 4rem;
+  }
+
+  .card-doacao .text{
+    width: 100%;
+  }
+}
+
+/* Smartphones */
+
+@media (max-width: 558px) {
+
+  .benedito{
+    display: none;
+  }
+
+  #section-2 .content-text{
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  #section-2 .content-text .text{
+    width: 80%;
+  }
+
+  .photo-container{
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .demo-gallery{
+    height: 80%;
+  }
+
+  .container-cards{
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 30rem);
+  }
+
+  .udu-coroa{
+    right: -20rem;
+  }
+
+  .folha{
+    width: 35rem !important;
+  }
+
+  #folha-4, #folha-5{
+    display: none;
+  }
+}

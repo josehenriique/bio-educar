@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'general/css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'general/css/general.css' %}">
+  {% block 'head' %}{% endblock %}
+
+  <title>Bio Educar</title>
+</head>
+<body>
+
+  <header>
+    <h1 class="logotipo"><a href="/"><span class="logo-bio">Bio</span><span class="logo-educar">Educar</span></a></h1>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="/quem-somos" class="text_menu line-hover">Quem somos</a></li>
+        <li><a href="/projetos" class="text_menu line-hover">Projetos</a></li>
+        <li><a href="/contato" class="text_menu line-hover">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <div class="hamburguer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="icon-hamburguer">
+        <path d="M20 17.5C20.3852 17.5002 20.7556 17.6486 21.0344 17.9144C21.3132 18.1802 21.479 18.5431 21.4975 18.9279C21.516 19.3127 21.3858 19.6898 21.1338 19.9812C20.8818 20.2726 20.5274 20.4558 20.144 20.493L20 20.5H4C3.61478 20.4998 3.24441 20.3514 2.96561 20.0856C2.68682 19.8198 2.52099 19.4569 2.50248 19.0721C2.48396 18.6873 2.61419 18.3102 2.86618 18.0188C3.11816 17.7274 3.47258 17.5442 3.856 17.507L4 17.5H20ZM20 10.5C20.3978 10.5 20.7794 10.658 21.0607 10.9393C21.342 11.2206 21.5 11.6022 21.5 12C21.5 12.3978 21.342 12.7794 21.0607 13.0607C20.7794 13.342 20.3978 13.5 20 13.5H4C3.60218 13.5 3.22064 13.342 2.93934 13.0607C2.65804 12.7794 2.5 12.3978 2.5 12C2.5 11.6022 2.65804 11.2206 2.93934 10.9393C3.22064 10.658 3.60218 10.5 4 10.5H20ZM20 3.5C20.3978 3.5 20.7794 3.65804 21.0607 3.93934C21.342 4.22064 21.5 4.60218 21.5 5C21.5 5.39782 21.342 5.77936 21.0607 6.06066C20.7794 6.34196 20.3978 6.5 20 6.5H4C3.60218 6.5 3.22064 6.34196 2.93934 6.06066C2.65804 5.77936 2.5 5.39782 2.5 5C2.5 4.60218 2.65804 4.22064 2.93934 3.93934C3.22064 3.65804 3.60218 3.5 4 3.5H20Z"/>
+      </svg>
+
+      <div class="pop-up">  
+        <ul class="hamburguer_link">
+          <li><a href="/quem-somos" class="text_menu line-hover">Quem somos</a></li>
+          <li><a href="/projetos" class="text_menu line-hover">Projetos</a></li>
+          <li><a href="/contato" class="text_menu line-hover">Contato</a></li>
+        </ul>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" id="close-pop-up">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00009 10.122L13.3031 15.425C13.5845 15.7064 13.9661 15.8645 14.3641 15.8645C14.762 15.8645 15.1437 15.7064 15.4251 15.425C15.7065 15.1436 15.8646 14.7619 15.8646 14.364C15.8646 13.966 15.7065 13.5844 15.4251 13.303L10.1201 7.99999L15.4241 2.69699C15.5634 2.55766 15.6738 2.39226 15.7492 2.21024C15.8245 2.02821 15.8633 1.83313 15.8632 1.63613C15.8632 1.43914 15.8243 1.24407 15.7489 1.06209C15.6735 0.880101 15.5629 0.714755 15.4236 0.575488C15.2843 0.436221 15.1189 0.325762 14.9368 0.250416C14.7548 0.175071 14.5597 0.136315 14.3627 0.136361C14.1657 0.136408 13.9707 0.175255 13.7887 0.250687C13.6067 0.326118 13.4414 0.436656 13.3021 0.575988L8.00009 5.87899L2.69709 0.575988C2.55879 0.432659 2.39333 0.318309 2.21036 0.239611C2.02739 0.160912 1.83058 0.119441 1.63141 0.117617C1.43224 0.115793 1.23471 0.153652 1.05033 0.228987C0.86595 0.304321 0.698421 0.415622 0.557516 0.556394C0.416611 0.697166 0.305153 0.864591 0.229644 1.0489C0.154136 1.23321 0.11609 1.43071 0.117726 1.62988C0.119363 1.82905 0.160648 2.02589 0.239174 2.20894C0.3177 2.39198 0.431894 2.55755 0.575092 2.69599L5.88009 7.99999L0.576093 13.304C0.432894 13.4424 0.3187 13.608 0.240174 13.791C0.161648 13.9741 0.120363 14.1709 0.118726 14.3701C0.11709 14.5693 0.155136 14.7668 0.230644 14.9511C0.306153 15.1354 0.417611 15.3028 0.558516 15.4436C0.69942 15.5844 0.86695 15.6957 1.05133 15.771C1.23571 15.8463 1.43324 15.8842 1.63241 15.8824C1.83158 15.8805 2.02839 15.8391 2.21136 15.7604C2.39433 15.6817 2.55979 15.5673 2.69809 15.424L8.00009 10.122Z" />
+        </svg>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="smooth-wrapper">
+    <div class="smooth-content">
+
+      <main class="">
+        <div class="">
+          {% block 'content' %}
+          {% endblock %}
+        </div>
+      </main>
+    
+      <footer>
+        <div class="container">
+          <div class="column" id="column-1">
+            <a href=""><span class="logo-bio">Bio</span><span class="logo-educar">Educar</span></a>
+            <h1 class="display">Preservando <span>hoje</span> para <span>garantir o amanhã.</span></h1>
+            <p class="text">Copyright © 2024 Instituto BioEducar. Todos os direitos reservados.</p>
+          </div>
+      
+          <div class="column" id="column-2">
+            <h3 class="heading-1">Outras páginas</h3>
+            <ul>
+              <li class="text">Quem somos?</li>
+              <li class="text">Educação</li>
+              <li class="text">Artigos</li>
+              <li class="text">Projetos</li>
+              <li class="text">Atividades em campo</li>
+            </ul>
+          </div>
+      
+          <div class="column" id="column-3">
+            <h3 class="heading-1">Redes Sociais</h3>
+            <div class="rede-social-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M6.09 0H14.91C18.27 0 21 2.73 21 6.09V14.91C21 16.5252 20.3584 18.0742 19.2163 19.2163C18.0742 20.3584 16.5252 21 14.91 21H6.09C2.73 21 0 18.27 0 14.91V6.09C0 4.47483 0.641623 2.92582 1.78372 1.78372C2.92582 0.641623 4.47483 0 6.09 0ZM5.88 2.1C4.87748 2.1 3.91602 2.49825 3.20714 3.20714C2.49825 3.91602 2.1 4.87748 2.1 5.88V15.12C2.1 17.2095 3.7905 18.9 5.88 18.9H15.12C16.1225 18.9 17.084 18.5018 17.7929 17.7929C18.5018 17.084 18.9 16.1225 18.9 15.12V5.88C18.9 3.7905 17.2095 2.1 15.12 2.1H5.88ZM16.0125 3.675C16.3606 3.675 16.6944 3.81328 16.9406 4.05942C17.1867 4.30556 17.325 4.6394 17.325 4.9875C17.325 5.3356 17.1867 5.66944 16.9406 5.91558C16.6944 6.16172 16.3606 6.3 16.0125 6.3C15.6644 6.3 15.3306 6.16172 15.0844 5.91558C14.8383 5.66944 14.7 5.3356 14.7 4.9875C14.7 4.6394 14.8383 4.30556 15.0844 4.05942C15.3306 3.81328 15.6644 3.675 16.0125 3.675ZM10.5 5.25C11.8924 5.25 13.2277 5.80312 14.2123 6.78769C15.1969 7.77225 15.75 9.10761 15.75 10.5C15.75 11.8924 15.1969 13.2277 14.2123 14.2123C13.2277 15.1969 11.8924 15.75 10.5 15.75C9.10761 15.75 7.77225 15.1969 6.78769 14.2123C5.80312 13.2277 5.25 11.8924 5.25 10.5C5.25 9.10761 5.80312 7.77225 6.78769 6.78769C7.77225 5.80312 9.10761 5.25 10.5 5.25ZM10.5 7.35C9.66457 7.35 8.86335 7.68187 8.27261 8.27261C7.68187 8.86335 7.35 9.66457 7.35 10.5C7.35 11.3354 7.68187 12.1366 8.27261 12.7274C8.86335 13.3181 9.66457 13.65 10.5 13.65C11.3354 13.65 12.1366 13.3181 12.7274 12.7274C13.3181 12.1366 13.65 11.3354 13.65 10.5C13.65 9.66457 13.3181 8.86335 12.7274 8.27261C12.1366 7.68187 11.3354 7.35 10.5 7.35Z" fill="#AFBF81"/>
+              </svg>
+      
+              <a href="#" class="text">@institutobioeducar</a>
+            </div>
+          </div>
+        </div>
+      
+        <img src="{% static 'assets/Home_2.png' %}" alt="" class="bg-home">
+        
+        <img class="folha" id="folha-footer-1" src="{% static 'assets/folha_1.png' %}" data-lag="0.2" alt="">
+        <img class="folha" id="folha-footer-2" src="{% static 'assets/folha_7.png' %}" alt="">
+      </footer>
+
+    </div>
+  </div>
+  
+  <!-- GASP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script>
+
+  <script src="{% static 'general/js/general.js' %}"></script>
+  <script src="{% static 'general/js/base.js' %}"></script>
+  {% block 'script' %}{% endblock %}
+</body>
+</html>
