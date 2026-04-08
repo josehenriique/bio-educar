@@ -4,6 +4,24 @@ Este repositório contém o desenvolvimento do site institucional da **BioEducar
 
 O projeto foi desenvolvido com foco em performance, experiência do usuário e fluidez visual, com o objetivo de criar um site atrativo para os usuários.
 
+### 🌐 Acesse o projeto
+
+> [!IMPORTANT]
+> Este é um ambiente de demonstração desenvolvido para apresentação do projeto.  
+> Não representa necessariamente o ambiente oficial da instituição.
+
+🔗 [Acessar versão online](https://josehenriiquee.pythonanywhere.com/)
+
+---
+
+## 💻 Telas
+
+
+<p align="center">
+  <img src="images/image1.png" width="48%" />
+  <img src="images/image2.png" width="48%" />
+</p>
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
